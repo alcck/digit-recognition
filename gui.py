@@ -6,7 +6,6 @@ from PIL import ImageGrab, Image
 import numpy as np
 model = load_model('mnist.h5')
 def predict_digit(img):
-
     img = img.resize((28,28))
 
     img = img.convert('L')
